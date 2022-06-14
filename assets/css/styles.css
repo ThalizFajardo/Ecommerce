@@ -114,6 +114,7 @@ nav {
     margin: 0px 0 -30rem 34%;
     z-index: 0;
     max-width: fit-content;
+    left: 20%;
 }
 input#menu-hamburguesa {
     visibility: hidden;
@@ -172,6 +173,7 @@ input#menu-hamburguesa:checked~ul {
 }
 .info-header>p {
     font-size: 13px;
+    text-align: justify;
 }
 .info-header>h3 {
     padding-top: 1rem;
