@@ -13,31 +13,121 @@
 </head>
 <body>
     <header>
-
-        <div class="navbar">
-            <img class="logo-academlo" src="./assets/images/logoAcademlo.svg" alt="">
-            <nav>
-                <ul>STORE</ul>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
+        <div class="header-container">
+            <div class="rectangulo">
+                <img src="./assets/images/home.png">
+            </div>
+            <nav class="navbar">
+                <div id="logo">
+                    <img src="./assets/images/logoAcademlo.svg">
+                    <h4>STORE</h4>
+                </div>
+                <input type="checkbox" id="menu-hamburguesa">
+                <ul class="nav-list">
+                    <li>Home</li>
+                    <li>Products</li>
                 </ul>
-
-                <div class="iconos-luna">
-                    <div class="separacion-iconos">
-                        <div>
-                            <img class="icon-color-luna" src="./assets/images/moon.png" alt="">
-                        </div>
-                        <div>
-                            <img class="icon-color-bolsa" src="./assets/images/shopping-bag.png" alt="">
-                        </div>
+                <div class="iconos">
+                    <img src="./assets/images/moon.png">
+                    <img src="./assets/images/shopping-bag.png" alt="">
+                </div>
+                <label for="menu-hamburguesa">
+                    <img src="./assets/images/menu-de-puntos.png" id="menu">
+                </label>
+            </nav>
+            <section class="info-header">
+                <h2>New Sweatshirt</h2>
+                <h2>COLLECTIONS 2022</h2>
+                <p>Latest arrivalof the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series,with a modern design</p>
+                <h3>$ 14.00</h3>
+            </section>
+            <section class="button">
+                <p>Discover</p>
+                <button type="button">ADD TO CART</button>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section class="productos">
+            <div class="info-productos">
+                <div>
+                    <p>Show All<br>show all products</p>
+                </div>
+                <div>
+                    <p>Hoodies<br>3 products</p>
+                </div>
+                <div>
+                    <p>Shirts<br>4 products</p>
+                </div>
+                <div>
+                    <p>Sweatshirts<br>4products</p>
+                </div>
+            </div>
+            <div class="products">
+                <div class="card">
+                    <div class="imagen">
+                        <img src="./assets/images/featured1.png">
+                    </div>
+                    <button type="button" class="buy-button">+</button>
+                    <div class="info-card">
+                        <h4>$14.00 |</h4>
+                        <p>stock:1</p>
+                        <h4>Hoodies</h4>
                     </div>
                 </div>
-            </nav>
-            
+                <div class="card">
+                    <div class="imagen">
+                        <img src="./assets/images/featured2.png">
+                    </div>
+                    <button type="button" class="buy-button">+</button>
+                    <div class="info-card">
+                        <h4>$24.00 |</h4>
+                        <p>stock:10</p>
+                        <h4>Shirts</h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imagen">
+                        <img src="./assets/images/featured3.png">
+                    </div>
+                    <button type="button" class="buy-button">+</button>
+                    <div class="info-card">
+                        <h4>$24.00 |</h4>
+                        <p>stock:18</p>
+                        <h4>Sweatshirts</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3>Our information</h3>
+                <p>Toluca-Mexico</p>
+            </div>
+            <div>
+                <h3>About Us</h3>
+                <p>Support Center</p>
+                <p>Customer Support</p>
+                <p>About Us</p>
+                <p>Copy Rigth</p>
+            </div>
+            <div>
+                <h3>Product</h3>
+                <p>Hoodies</p>
+                <p>Shirts</p>
+                <p>Sweatshirts</p>
+            </div>
+            <div>
+                <h3>Social</h3>
+                <img src="./assets/images/simbolo-de-la-aplicacion-de-facebook.png">
+                <img src="./assets/images/ant-design_twitter-outlined.svg">
+                <img src="./assets/images/ant-design_instagram-filled.svg">
+            </div>
         </div>
-
-    </header>
+    </footer>
+</body>
 
 </body>
 </html>
