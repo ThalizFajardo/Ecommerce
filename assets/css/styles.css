@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /*-------------GOOGLE FONT----------------*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
@@ -32,16 +37,10 @@ a{
         --border-color: hsl(0, 0%, 20%);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body{
     font-family: 'Roboto', sans-serif;;
 }
-
 
 
 nav{
@@ -52,69 +51,13 @@ nav{
     height: 60px;
 }
 
-input#menu-hamburguesa{
-    visibility: hidden;
-}
-
-input#menu-hamburguesa ~ ul{
-    background-color: var(--background-color);
-    color: white;
-    list-style: none;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    height: calc(100vh - 60px);
-    top: 60px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 2rem;
-    padding: 2rem 1rem;
-    display: none;
-    z-index: 2;
-} /* Le da la estructura al menú que desplega la hamburguesa*/
-
-/* ICONOS NAVBAR */
-
-.icon-color-bolsa{
-    width: 22px;
-    height: 22px;
-    display: flex;
-    position: relative;
-    bottom: -2px;
-}
-
-.icon-color-luna{
-    width: 30px;
-    height: 30px;
-    display: flex;
-    position: relative;
-    bottom: 1px;
-}
-
-.icon-color-menu{
-    width: 27px;
-    height: 27px;
-}
 
 .logo-academlo{
-    width: 55px;
-    height: 55px;
+    width: 65px;
+    height: 65px;
     filter: invert(53%) sepia(39%) saturate(6133%) hue-rotate(324deg) brightness(91%) contrast(102%);
 }
 
-.frase-store{
-    width: 55px;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -10px;
-}
-
-.logo-frase{
-    display: flex;
-}
 
 .iconos-luna{
     display: flex;
@@ -122,51 +65,56 @@ input#menu-hamburguesa ~ ul{
 
 .separacion-iconos{
     display: flex;
-    width: 65px;
-    justify-content: space-between;
-    margin-right: 10px;
-
+    width: 150px;
+    justify-content: space-evenly;
 }
 
-/* FIN ICONOS NAVBAR */
+.menu{
+    width: 900px;
+    margin: 0 auto;
+}
 
-input#menu-hamburguesa:checked ~ ul{
+header {
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+}
+
+img {
+    float: left;
+    width: 50px;
+    padding: 8px;
+}
+
+nav {
+    float: left;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 70px;
+    padding: 25px 0;
+    float:  left;
+}
+
+.navbar{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.icon-color-bolsa{
+    width: 40px;
+    height: 40px;
     display: flex;
-} /* Desaparece el menú cuando se da click al menu hamburguesa */
-
-.color-home{
-    color: red;
-}
-.color-products{
-    color: black;
+    position: relative;
+    bottom: -4px;
 }
 
-
-/* HEADER */
-
-
-
-
-
-
-
-
-
-@media screen and ( min-width:600px ) {
-    
-    label{
-        display: none;
-    }
-    ul{
-        display: block;
-    }
-
-    input#menu-hamburguesa ~ ul{
-        position: static;
-        background-color: transparent;
-        display: flex;
-        flex-direction: row;
-        height: auto;
-        justify-content: flex-end;
-    }
+.icon-color-luna{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    position: relative;
+    bottom: 1px;
 }
