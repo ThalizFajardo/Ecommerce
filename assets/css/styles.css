@@ -96,6 +96,70 @@ input#cart-menu:checked~ul {
     align-self: center;
     gap: 1rem;
 }
+
+.cart-count{
+    width: 1rem;
+    height: 1rem;
+    font-size: 8px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 50%;
+    padding: .25rem;
+    bottom: 0;
+    right: -5px;
+}
+
+/*---------Vista del carrito-----------*/
+.shopping-cart-overlay{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(122, 122, 122, 0.397);
+    position: fixed;
+    left: 0;
+    top:0;
+    display: none;
+    z-index: 50;
+}
+
+.shopping-cart-overlay.mostrar{
+    display: block;
+}
+
+.selected-products-list{
+    background-color: hsl(206, 4%, 97%);
+    width: 100%;
+    min-height: 100vh;
+    padding: 1.5rem 1rem;
+    max-width: 450px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.empty-state{
+    min-height: 60vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.25rem;
+    align-items: center;
+}
+
+.empty-state > img{
+    max-width: 250px;
+}
+
+.cart-close {
+    margin-left: auto;
+    display: block;
+    width: 30px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;

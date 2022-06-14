@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academlo Store</title>
-
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="./assets/images/favicon.png">
-
     <link rel="stylesheet" href="./assets/css/styles.css">
 
 </head>
@@ -29,7 +28,10 @@
                 </ul>
                 <div class="iconos">
                     <img src="./assets/images/moon.png">
-                    <img src="./assets/images/shopping-bag.png" alt="">
+                    <div class="cart">
+                        <img src="./assets/images/shopping-bag.png" alt="">
+                        <span class="cart-count" id="cart-count">0</span>
+                    </div>
                 </div>
                 <label for="menu-hamburguesa">
                     <img src="./assets/images/menu-de-puntos.png" id="menu">
@@ -127,6 +129,18 @@
             </div>
         </div>
     </footer>
+
+    <div class="shopping-cart-overlay">
+        <div class="selected-products-list">
+            <i class="bx bx-x bx-md cart-close" id="cart-close"></i>
+            <div class="empty-state">
+                <img src="./assets/images/empty-cart.png" alt="">
+                <h5>Aun no has agregado ningun producto a tu carrito</h5>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </body>
