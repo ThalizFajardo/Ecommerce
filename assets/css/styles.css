@@ -119,7 +119,7 @@ input#cart-menu:checked~ul {
     right: -5px;
 }
 
-.cart-list > .item > img{
+.cart-list>.item>img {
     width: 120px;
 }
 
@@ -324,10 +324,6 @@ input#menu-hamburguesa:checked~ul {
 .products {
     display: flex;
     flex-direction: row;
-    /*display: grid;
-    grid-template-columns: auto;
-    gap: 3rem;
-    margin-bottom: 5rem;*/
 }
 
 .card {
@@ -374,9 +370,6 @@ input#menu-hamburguesa:checked~ul {
         width: 100%;
         margin-bottom: 2rem;
         overflow-x: scroll;
-        /*grid-template-columns: auto auto auto;
-        grid-template-rows: auto;
-        overflow-x: scroll;*/
     }
 }
 

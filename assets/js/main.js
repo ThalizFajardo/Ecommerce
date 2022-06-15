@@ -132,10 +132,14 @@ function mostrarProductos() {
 function agregarProducto(producto) {
 
     let resultadoFind = cart.find(item => item.id === producto.id)
+    let cartCount = document.querySelector(".cart-count")
+    cartCount.textContent++;
 
     if (resultadoFind) {
         let stoc = cart[resultadoFind.index].quantity
         let quantitySelected = cart[resultadoFind.index].quantitySelected
+
+
         if (stoc > quantitySelected) {
             cart[resultadoFind.index].quantitySelected += 1
 
