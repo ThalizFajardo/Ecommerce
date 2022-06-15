@@ -343,6 +343,7 @@ input#menu-hamburguesa:checked~ul {
 }
 .cart-item{
     border-left: 3px solid transparent;
+    border-bottom: 1px solid var(--first-color);
 }
 
 /*estilando footer*/
