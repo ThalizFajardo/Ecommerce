@@ -117,22 +117,17 @@ function mostrarProductos() {
             let product = items.find(item => {
                 return item.id === id
             })
-<<<<<<< HEAD
+
             
             //cart.push( product )
             //console.log((cart))
             agregarProducto(product)
-=======
 
-            agregarProducto(product)
-                // cart.push( product )
-                //console.log((cart))
->>>>>>> b477afdffcea7cd371b6eeac05bb737dcd975dc5
         })
     })
 }
 
-<<<<<<< HEAD
+
 function agregarProducto( producto ){
 
     let resultadoFind = cart.find( item => item.id === producto.id )
@@ -175,7 +170,7 @@ function mostrarProductosCart(){
     cartContainer.innerHTML = fragmentoHTML
 
 }
-=======
+
 
 /*cambiando a dark-mode */
 let themeIcon = document.getElementById("theme-toggler")
@@ -185,4 +180,4 @@ let body = document.querySelector("body")
 themeIcon.addEventListener("click", (e) => {
     body.classList.toggle("dark-theme")
 })
->>>>>>> b477afdffcea7cd371b6eeac05bb737dcd975dc5
+
