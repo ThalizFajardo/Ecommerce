@@ -318,10 +318,13 @@ input#menu-hamburguesa:checked~ul {
 /*modo en que se muestran los productos*/
 
 .products {
-    display: grid;
+
+    display: flex;
+    flex-direction: row;
+    /*display: grid;
     grid-template-columns: auto;
     gap: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 5rem;*/
 }
 
 .card {
@@ -331,9 +334,14 @@ input#menu-hamburguesa:checked~ul {
     grid-template-rows: 80% auto;
     width: 18rem;
     height: 25rem;
+<<<<<<< HEAD
     margin: 0 25%;
     box-shadow: 2px 7px 15px var(--border-color);
     color: var(--text-color);
+=======
+    margin: 75px;
+    box-shadow: 2px 7px 15px grey;
+>>>>>>> 5d5b501fb1c1024268065d403391c7a1c11cba52
 }
 
 .card>.imagen {
@@ -366,9 +374,12 @@ input#menu-hamburguesa:checked~ul {
 
 @media screen and (min-width: 600px) {
     .products {
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto;
+        width: 100%;
+        margin-bottom: 2rem;
         overflow-x: scroll;
+        /*grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        overflow-x: scroll;*/
     }
 }
 
