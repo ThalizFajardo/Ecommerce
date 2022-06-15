@@ -214,14 +214,18 @@ function mostrarProductosCart(){
     })
 
     fragmentoHTML += `
-        <div class="cart-price">
-            <p>Productos seleccionados ${cantidadTotal}</p>
-            <p>${suma}</p>
-        </div>
-        <div class="btn-pago">
-        <a href="./assets/images/meme2.jpg" target="_blank">
-        <button class="btn-pointer">Continuar con el pago </button>
-        </a>
+        <div class="info-carrito">
+            <div class="cart-price">
+                <p>Productos seleccionados ${cantidadTotal}</p>
+            </div>
+            <div>
+                <p>Total a pagar: $${suma}</p>
+            </div>
+            <div class="btn-pago">
+                <a href="./assets/images/meme2.jpg" target="_blank">
+                <button class="btn-pointer">Continuar con el pago </button>
+                </a>
+            </div>
         </div>
         `
         

@@ -303,7 +303,7 @@ input#menu-hamburguesa:checked~ul {
     margin: -2rem 20px 0px 13rem;
     font-size: 2rem;
     box-shadow: 2px 5px 4px var(--container-color);
-    border: 1px solid var(--friendly-gray);
+    border: 1px solid white;
 }
 
 .card>.imagen>img {
@@ -317,6 +317,22 @@ input#menu-hamburguesa:checked~ul {
     grid-template-columns: 25% auto;
     grid-template-rows: auto;
     margin: -13px 0 0 26px;
+}
+
+.info-carrito,
+.cart-item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.info-carrito{
+    border-left: 3px solid var(--first-color);
+    padding-left: 3px;
+}
+.cart-item{
+    border-left: 3px solid white;
 }
 
 /*estilando footer*/
@@ -367,6 +383,11 @@ input#menu-hamburguesa:checked~ul {
     justify-content: space-between;
     gap: 2rem;
     align-items: center;
+}
+
+.bx{
+    display: flex;
+    justify-content: center;
 }
 
 
