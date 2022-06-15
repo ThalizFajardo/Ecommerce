@@ -42,8 +42,22 @@ let cartContainer = document.querySelector(".cart-list")
 let cartCount = document.querySelector("#cart-count")
 let cart = []
 
+/* -------------------------- */
+/* */
+
+function resetWeb(){
+    if( JSON.parse( window.localStorage.getItem("contador")) !== null){
+        cart = JSON.parse( window.localStorage.getItem("contador") )
+    }else{
+        window.localStorage.setItem('contador', [])
+    }
+    
+    mostrarProductosCart()
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     mostrarProductos()
+    resetWeb()
 })
 
 cartIcon.addEventListener("click", () => {
@@ -155,6 +169,7 @@ function agregarProducto(producto) {
         cart.push(producto)
     }
 
+    window.localStorage.setItem( "contador", JSON.stringify(cart))
     console.log(cart)
     mostrarProductosCart()
 }
