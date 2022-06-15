@@ -140,6 +140,11 @@ input#cart-menu:checked~ul {
     top: 0;
 }
 
+.cart-list > .item > img {
+    width: 100px;
+
+}
+
 .empty-state{
     min-height: 60vh;
     text-align: center;

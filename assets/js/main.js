@@ -99,7 +99,7 @@ function mostrarProductos() {
     listProducts.innerHTML = fragmentHTML
 
 
-    let productsButton = document.querySelectorAll(".product-button")
+    let productsButton = document.querySelectorAll(".buy-button")
 
 
     productsButton.forEach( (button) =>{
@@ -109,9 +109,52 @@ function mostrarProductos() {
                 return item.id === id 
             })
             
-            agregarProducto(product)
-            // cart.push( product )
+            //cart.push( product )
             //console.log((cart))
+            agregarProducto(product)
         })
     })
+}
+
+function agregarProducto( producto ){
+
+    let resultadoFind = cart.find( item => item.id === producto.id )
+
+    if( resultadoFind ){
+        let stoc = cart[resultadoFind.index].quantity
+        let quantitySelected = cart[resultadoFind.index].quantitySelected
+        if( stoc > quantitySelected ){
+            cart[resultadoFind.index].quantitySelected += 1
+
+        }else{
+            alert("No tenemos suficiente inventario")
+        }        
+
+    }else{
+        producto.quantitySelected = 1
+        producto.index = cart.length
+
+
+        cart.push(producto)
+    }
+
+    console.log(cart)
+    mostrarProductosCart()
+}
+
+function mostrarProductosCart(){
+    let fragmentoHTML = ``
+
+    cart.forEach(item => {
+        fragmentoHTML += `
+            <div class="item">
+                <img src=${item.image} alt="">
+                <p>${item.name}</p>
+                <small>Cantidad: ${item.quantitySelected}</small>
+            </div>
+        `
+    })
+
+    cartContainer.innerHTML = fragmentoHTML
+
 }
