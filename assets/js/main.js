@@ -77,6 +77,7 @@ themeIcon.addEventListener("click", (e) => {
     body.classList.toggle("dark-theme")
 })
 
+/* -- Desde aqui se puede visualizar el codigo para agregar los productos al carro de compras */
 function mostrarProductos() {
     let fragmentHTML = ""
 
