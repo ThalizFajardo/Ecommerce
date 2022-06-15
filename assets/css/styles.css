@@ -71,6 +71,10 @@ input#cart-menu:checked~ul {
     display: flex;
 }
 
+a{
+    color: inherit;
+    text-decoration: none;
+}
 
 /*estilando la barra de navegacion*/
 
@@ -338,6 +342,19 @@ input#menu-hamburguesa:checked~ul {
 
 .cart-item img{
     width: 150px;
+}
+
+.btn-pago{
+    width: 120px;
+    height: auto;
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid transparent;
+}
+
+.btn-pago > button {
+    border: 1px solid black;
+    border-radius: 4px;
 }
 
 .cart-price{

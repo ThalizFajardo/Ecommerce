@@ -203,6 +203,11 @@ function mostrarProductosCart(){
             <p>Productos seleccionados ${cantidadTotal}</p>
             <p>${suma}</p>
         </div>
+        <div class="btn-pago">
+        <a href="./assets/images/meme2.jpg" target="_blank">
+        <button>Continuar con el pago </butoon>
+        </a>
+        </div>
     `
 
     cartContainer.innerHTML = fragmentoHTML
