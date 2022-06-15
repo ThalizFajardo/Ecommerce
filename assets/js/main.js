@@ -89,7 +89,17 @@ let body = document.querySelector("body")
 
 themeIcon.addEventListener("click", (e) => {
     body.classList.toggle("dark-theme")
+    
+    let isDark = body.classList.contains("dark-theme")
+    
+    if(isDark){
+        themeIcon.classList.replace("bx-moon", "bx-sun")
+    }else{
+        themeIcon.classList.replace("bx-sun", "bx-moon")
+    }
+    
 })
+
 
 /* -- Desde aqui se puede visualizar el codigo para agregar los productos al carro de compras */
 function mostrarProductos() {
