@@ -1,37 +1,36 @@
 "use strict"
 
-const items = [
-    {
-      id: 1,
-      name: 'Hoodies',
-      price: 14.00,
-      image: 'https://academlo-store.netlify.app/assets/img/featured1.png',
-      category: 'hoodies',
-      quantity: 10
+const items = [{
+        id: 1,
+        name: 'Hoodies',
+        price: 14.00,
+        image: 'https://academlo-store.netlify.app/assets/img/featured1.png',
+        category: 'hoodies',
+        quantity: 10
     },
     {
-      id: 2,
-      name: 'Shirts',
-      price: 24.00,
-      image: 'https://academlo-store.netlify.app/assets/img/featured2.png',
-      category: 'shirts',
-      quantity: 15
+        id: 2,
+        name: 'Shirts',
+        price: 24.00,
+        image: 'https://academlo-store.netlify.app/assets/img/featured2.png',
+        category: 'shirts',
+        quantity: 15
     },
     {
-      id: 3,
-      name: 'Sweatshirts',
-      price: 24.00,
-      image: 'https://academlo-store.netlify.app/assets/img/featured3.png',
-      category: 'sweatshirts',
-      quantity: 20
+        id: 3,
+        name: 'Sweatshirts',
+        price: 24.00,
+        image: 'https://academlo-store.netlify.app/assets/img/featured3.png',
+        category: 'sweatshirts',
+        quantity: 20
     },
     {
-      id: 4,
-      name: 'Sweatshirts',
-      price: 30.00,
-      image: 'https://academlo-store.netlify.app/assets/img/featured3.png',
-      category: 'sweatshirts',
-      quantity: 10
+        id: 4,
+        name: 'Sweatshirts',
+        price: 30.00,
+        image: 'https://academlo-store.netlify.app/assets/img/featured3.png',
+        category: 'sweatshirts',
+        quantity: 10
     }
 ]
 
@@ -43,15 +42,15 @@ let cartContainer = document.querySelector(".cart-list")
 let cartCount = document.querySelector("#cart-count")
 let cart = []
 
-document.addEventListener("DOMContentLoaded", () =>{
+document.addEventListener("DOMContentLoaded", () => {
     mostrarProductos()
 })
 
-cartIcon.addEventListener( "click", () =>{
+cartIcon.addEventListener("click", () => {
     cartOverlay.classList.add("mostrar")
 })
 
-cartClose.addEventListener( "click", () =>{
+cartClose.addEventListener("click", () => {
     cartOverlay.classList.remove("mostrar")
 })
 
@@ -60,10 +59,10 @@ cartClose.addEventListener( "click", () =>{
 
 let header = document.querySelector("header")
 
-window.addEventListener( "scroll", () =>{
-    if( window.scrollY > 60 ){
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 60) {
         header.classList.add("scroll-header")
-    }else{
+    } else {
         header.classList.remove("scroll-header")
     }
 })
@@ -71,7 +70,7 @@ window.addEventListener( "scroll", () =>{
 function mostrarProductos() {
     let fragmentHTML = ""
 
-    items.forEach( (product) =>{
+    items.forEach((product) => {
         fragmentHTML += `
         <div class="card">
             <div class="imagen">
@@ -85,15 +84,15 @@ function mostrarProductos() {
             </div>
         </div>
         `
-        /*<div class="product-card">
-            <div class="product-image-container">
-                <img src=${product.image} alt="" class="product-img">
-            </div>
-            <p>$${product.price}</p>
-            <button data-id="${product.id}" class="product-button">
-                <i class='bx bx-plus-circle bx-md'></i>
-            </button>
-        </div>*/
+            /*<div class="product-card">
+                <div class="product-image-container">
+                    <img src=${product.image} alt="" class="product-img">
+                </div>
+                <p>$${product.price}</p>
+                <button data-id="${product.id}" class="product-button">
+                    <i class='bx bx-plus-circle bx-md'></i>
+                </button>
+            </div>*/
     })
 
     listProducts.innerHTML = fragmentHTML
@@ -102,16 +101,26 @@ function mostrarProductos() {
     let productsButton = document.querySelectorAll(".product-button")
 
 
-    productsButton.forEach( (button) =>{
-        button.addEventListener("click", (evento) =>{
-            let id = parseInt( button.getAttribute("data-id") )
-            let product = items.find( item =>{ 
-                return item.id === id 
+    productsButton.forEach((button) => {
+        button.addEventListener("click", (evento) => {
+            let id = parseInt(button.getAttribute("data-id"))
+            let product = items.find(item => {
+                return item.id === id
             })
-            
+
             agregarProducto(product)
-            // cart.push( product )
-            //console.log((cart))
+                // cart.push( product )
+                //console.log((cart))
         })
     })
 }
+
+
+/*cambiando a dark-mode */
+let themeIcon = document.getElementById("theme-toggler")
+
+let body = document.querySelector("body")
+
+themeIcon.addEventListener("click", (e) => {
+    body.classList.toggle("dark-theme")
+})
