@@ -172,13 +172,3 @@ function mostrarProductosCart(){
 
 }
 
-
-/*cambiando a dark-mode */
-let themeIcon = document.getElementById("theme-toggler")
-
-let body = document.querySelector("body")
-
-themeIcon.addEventListener("click", (e) => {
-    body.classList.toggle("dark-theme")
-})
-

@@ -119,6 +119,10 @@ input#cart-menu:checked~ul {
     right: -5px;
 }
 
+.cart-list > .item > img{
+    width: 120px;
+}
+
 
 /*---------Vista del carrito-----------*/
 
