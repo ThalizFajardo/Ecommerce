@@ -118,6 +118,10 @@ a{
     width: 120px;
 }
 
+.red-home{
+    color: var(--first-color);
+}
+
 
 /*---------Vista del carrito-----------*/
 
@@ -130,6 +134,7 @@ a{
     top: 0;
     display: none;
     z-index: 50;
+    overflow-y: scroll;
 }
 
 .shopping-cart-overlay.mostrar {
@@ -270,6 +275,10 @@ input#menu-hamburguesa:checked~ul {
     box-shadow: 6px 0px 9px var(--border-color);
     padding: 0 0 0 23px;
     color: var(--text-color);
+}
+
+.border-left{
+    border-left: 2px solid var(--text-color-light);
 }
 
 
