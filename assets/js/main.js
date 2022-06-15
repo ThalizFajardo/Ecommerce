@@ -42,8 +42,8 @@ let cartContainer = document.querySelector(".cart-list")
 let cartCount = document.querySelector("#cart-count")
 let cart = []
 
-/* -------------------------- */
-/* */
+
+/* Guardando info con reseteo de página */
 
 function resetWeb(){
     if( JSON.parse( window.localStorage.getItem("contador")) !== null){

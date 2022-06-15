@@ -28,6 +28,7 @@ body.dark-theme {
     --body-color: hsl(249, 19%, 14%);
     --container-color: hsl(246, 16%, 12%);
     --border-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 75%);
 }
 
 * {
