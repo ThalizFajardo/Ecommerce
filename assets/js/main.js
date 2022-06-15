@@ -97,7 +97,9 @@ themeIcon.addEventListener("click", (e) => {
     }else{
         themeIcon.classList.replace("bx-sun", "bx-moon")
     }
-    
+
+    // e.preventDefault()
+
 })
 
 

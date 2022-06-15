@@ -342,7 +342,7 @@ input#menu-hamburguesa:checked~ul {
     padding-left: 3px;
 }
 .cart-item{
-    border-left: 3px solid white;
+    border-left: 3px solid transparent;
 }
 
 /*estilando footer*/
