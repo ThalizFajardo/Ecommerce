@@ -158,7 +158,7 @@ function agregarProducto(producto) {
     console.log(cart)
     mostrarProductosCart()
 }
-
+/*
 function mostrarProductosCart() {
     let fragmentoHTML = ``
 
@@ -174,4 +174,37 @@ function mostrarProductosCart() {
 
     cartContainer.innerHTML = fragmentoHTML
 
+}
+*/
+function mostrarProductosCart(){
+
+    let fragmentoHTML = ``
+    let suma = 0
+    let cantidadTotal = 0
+
+    cart.forEach( item =>{
+        fragmentoHTML += `
+        <div class="cart-item">
+            <img src="${item.image}" alt="">
+            <p>${item.name}</p>
+            <small>Cantidad: ${item.quantitySelected}</small>
+        </div> 
+        `
+
+
+        let totalProducto = item.quantitySelected * item.price
+        suma += totalProducto
+
+        cantidadTotal += item.quantitySelected
+    })
+
+    fragmentoHTML += `
+        <div class="cart-price">
+            <p>Productos seleccionados ${cantidadTotal}</p>
+            <p>${suma}</p>
+        </div>
+    `
+
+    cartContainer.innerHTML = fragmentoHTML
+    cartCount.textContent = cantidadTotal
 }

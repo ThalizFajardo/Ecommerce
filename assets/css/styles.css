@@ -71,20 +71,6 @@ input#cart-menu:checked~ul {
     display: flex;
 }
 
-@media screen and ( min-width:600px) {
-    label {
-        display: none;
-    }
-    input#cart-menu~ul {
-        position: static;
-        background-color: transparent;
-        display: flex;
-        flex-direction: row;
-        height: auto;
-        margin: 0 -2% -38px 10%;
-    }
-}
-
 
 /*estilando la barra de navegacion*/
 
@@ -94,6 +80,10 @@ input#cart-menu:checked~ul {
     align-items: center;
     margin: 0px 0px -25px 0;
     padding: inherit;
+}
+
+.color-logo-academlo{
+    filter: invert(43%) sepia(25%) saturate(3265%) hue-rotate(321deg) brightness(92%) contrast(99%);
 }
 
 .iconos {
@@ -221,31 +211,6 @@ input#menu-hamburguesa:checked~ul {
     display: flex;
 }
 
-@media screen and ( min-width:600px) {
-    label {
-        display: none;
-    }
-    input#menu-hamburguesa~ul {
-        position: static;
-        background-color: transparent;
-        display: flex;
-        flex-direction: row;
-        height: auto;
-        margin: 0 -2% -38px 10%;
-    }
-    .iconos {
-        position: relative;
-        margin-top: 3rem;
-        width: 5rem;
-        margin-right: 15%;
-        height: 2rem;
-        margin-left: 1rem;
-    }
-    .rectangulo {
-        margin-left: 50%;
-    }
-}
-
 .rectangulo>img {
     width: 105%;
     height: auto;
@@ -284,15 +249,6 @@ input#menu-hamburguesa:checked~ul {
     margin: -7px;
 }
 
-@media screen and (min-width: 600px) {
-    .info-header {
-        padding: 8rem 28rem 0 4rem;
-    }
-    .info-header>p {
-        margin-top: 1rem;
-    }
-}
-
 
 /*estilandola seccion de productos*/
 
@@ -309,13 +265,6 @@ input#menu-hamburguesa:checked~ul {
     box-shadow: 6px 0px 9px var(--border-color);
     padding: 0 0 0 23px;
     color: var(--text-color);
-}
-
-@media screen and (max-width:600px) {
-    .info-productos {
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
-    }
 }
 
 
@@ -366,15 +315,6 @@ input#menu-hamburguesa:checked~ul {
     margin: -13px 0 0 26px;
 }
 
-@media screen and (min-width: 600px) {
-    .products {
-        width: 100%;
-        margin-bottom: 2rem;
-        overflow-x: scroll;
-    }
-}
-
-
 /*estilando footer*/
 
 .footer-container {
@@ -396,9 +336,86 @@ input#menu-hamburguesa:checked~ul {
     margin-top: 2rem;
 }
 
+.cart-item img{
+    width: 150px;
+}
+
+.cart-price{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+}
+
+
+
 @media screen and (max-width:600px) {
     .footer-container {
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto;
     }
 }
+
+@media screen and (min-width: 600px) {
+    .products {
+        width: 100%;
+        margin-bottom: 2rem;
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .info-productos {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .info-header {
+        padding: 8rem 28rem 0 4rem;
+    }
+    .info-header>p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and ( min-width:600px) {
+    label {
+        display: none;
+    }
+    input#menu-hamburguesa~ul {
+        position: static;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        margin: 0 -2% -38px 10%;
+    }
+    .iconos {
+        position: relative;
+        margin-top: 3rem;
+        width: 5rem;
+        margin-right: 15%;
+        height: 2rem;
+        margin-left: 1rem;
+    }
+    .rectangulo {
+        margin-left: 50%;
+    }
+}
+
+@media screen and ( min-width:600px) {
+    label {
+        display: none;
+    }
+    input#cart-menu~ul {
+        position: static;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        margin: 0 -2% -38px 10%;
+    }
+}
+
