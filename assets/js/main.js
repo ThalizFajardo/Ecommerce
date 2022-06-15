@@ -205,11 +205,18 @@ function mostrarProductosCart(){
         </div>
         <div class="btn-pago">
         <a href="./assets/images/meme2.jpg" target="_blank">
-        <button>Continuar con el pago </butoon>
+        <button class="btn-pointer">Continuar con el pago </button>
         </a>
         </div>
-    `
+        `
+        
+        cartContainer.innerHTML = fragmentoHTML
+        cartCount.textContent = cantidadTotal
+    }
+    
+    
+    // <a href="./assets/images/meme2.jpg" target="_blank">
 
-    cartContainer.innerHTML = fragmentoHTML
-    cartCount.textContent = cantidadTotal
-}
+    //         </a>
+
+    // onclick="location.href='./assets/images/meme2.jpg'"

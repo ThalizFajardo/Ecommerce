@@ -346,7 +346,7 @@ input#menu-hamburguesa:checked~ul {
 
 .btn-pago{
     width: 120px;
-    height: auto;
+    height: 40px;
     display: flex;
     margin-top: 20px;
     border: 1px solid transparent;
@@ -355,6 +355,11 @@ input#menu-hamburguesa:checked~ul {
 .btn-pago > button {
     border: 1px solid black;
     border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-pointer{
+    cursor: pointer;
 }
 
 .cart-price{
