@@ -335,6 +335,7 @@ input#menu-hamburguesa:checked~ul {
     height: 25rem;
     margin: 75px;
     box-shadow: 2px 7px 15px grey;
+    color: var(--text-color);
 }
 
 .card>.imagen {
@@ -346,10 +347,10 @@ input#menu-hamburguesa:checked~ul {
     border-radius: 50%;
     width: 3rem;
     position: relative;
-    margin: -2rem 0px 0px 13rem;
+    margin: -2rem 20px 0px 13rem;
     font-size: 2rem;
-    box-shadow: 6px 5px 8px var(--border-color);
-    border: 1px solid var(--container-color);
+    box-shadow: 2px 5px 4px var(--container-color);
+    border: 1px solid var(--friendly-gray);
 }
 
 .card>.imagen>img {
