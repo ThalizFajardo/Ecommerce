@@ -318,7 +318,6 @@ input#menu-hamburguesa:checked~ul {
 /*modo en que se muestran los productos*/
 
 .products {
-
     display: flex;
     flex-direction: row;
     /*display: grid;
@@ -334,14 +333,8 @@ input#menu-hamburguesa:checked~ul {
     grid-template-rows: 80% auto;
     width: 18rem;
     height: 25rem;
-<<<<<<< HEAD
-    margin: 0 25%;
-    box-shadow: 2px 7px 15px var(--border-color);
-    color: var(--text-color);
-=======
     margin: 75px;
     box-shadow: 2px 7px 15px grey;
->>>>>>> 5d5b501fb1c1024268065d403391c7a1c11cba52
 }
 
 .card>.imagen {
