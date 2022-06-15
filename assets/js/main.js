@@ -119,7 +119,7 @@ function mostrarProductos() {
                 return item.id === id
             })
 
-            
+
             //cart.push( product )
             //console.log((cart))
             agregarProducto(product)
@@ -129,21 +129,21 @@ function mostrarProductos() {
 }
 
 
-function agregarProducto( producto ){
+function agregarProducto(producto) {
 
-    let resultadoFind = cart.find( item => item.id === producto.id )
+    let resultadoFind = cart.find(item => item.id === producto.id)
 
-    if( resultadoFind ){
+    if (resultadoFind) {
         let stoc = cart[resultadoFind.index].quantity
         let quantitySelected = cart[resultadoFind.index].quantitySelected
-        if( stoc > quantitySelected ){
+        if (stoc > quantitySelected) {
             cart[resultadoFind.index].quantitySelected += 1
 
-        }else{
+        } else {
             alert("No tenemos suficiente inventario")
-        }        
+        }
 
-    }else{
+    } else {
         producto.quantitySelected = 1
         producto.index = cart.length
 
@@ -155,7 +155,7 @@ function agregarProducto( producto ){
     mostrarProductosCart()
 }
 
-function mostrarProductosCart(){
+function mostrarProductosCart() {
     let fragmentoHTML = ``
 
     cart.forEach(item => {
@@ -171,14 +171,3 @@ function mostrarProductosCart(){
     cartContainer.innerHTML = fragmentoHTML
 
 }
-
-
-/*cambiando a dark-mode */
-let themeIcon = document.getElementById("theme-toggler")
-
-let body = document.querySelector("body")
-
-themeIcon.addEventListener("click", (e) => {
-    body.classList.toggle("dark-theme")
-})
-
