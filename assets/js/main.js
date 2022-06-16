@@ -235,7 +235,7 @@ function mostrarProductosCart(){
             </div>
             <div class="btn-pago">
                 <a href="./assets/images/meme2.jpg" target="_blank">
-                <button class="btn-pointer">Continuar con el pago </button>
+                <button class="btn-pointer"><span class="btn-font-size"><i class='bx bxs-check-shield'></i> Checkout</span></button>
                 </a>
             </div>
         </div>

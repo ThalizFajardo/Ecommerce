@@ -388,6 +388,9 @@ input#menu-hamburguesa:checked~ul {
 .btn-pointer{
     cursor: pointer;
     box-shadow: 1px 1px 1px black;
+    width: 120px;
+    height: 40px;
+    display: block ruby;
 }
 
 .cart-price{
@@ -400,6 +403,10 @@ input#menu-hamburguesa:checked~ul {
 .bx{
     display: flex;
     justify-content: center;
+}
+
+.btn-font-size{
+    font-size: 14px;
 }
 
 
