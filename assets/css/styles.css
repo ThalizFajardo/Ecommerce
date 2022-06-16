@@ -387,6 +387,7 @@ input#menu-hamburguesa:checked~ul {
 
 .btn-pointer{
     cursor: pointer;
+    box-shadow: 1px 1px 1px black;
 }
 
 .cart-price{
