@@ -215,7 +215,11 @@ function mostrarProductosCart(){
             <img src="${item.image}" alt="">
             <p>${item.name}</p>
             <small>Cantidad: ${item.quantitySelected}</small>
-        </div> 
+            <div class="agregar-productos">
+                <button class="sumar-producto"> + </button>
+                <button class="restar-producto"> - </button>
+            </div>
+        </div>
         `
 
 
