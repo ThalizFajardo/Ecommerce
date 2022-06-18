@@ -43,6 +43,9 @@ let cartCount = document.querySelector("#cart-count")
 let cart = []
 
 
+
+
+
 /* Guardando info con reseteo de página */
 
 function resetWeb(){
@@ -216,8 +219,8 @@ function mostrarProductosCart(){
             <p>${item.name}</p>
             <small>Cantidad: ${item.quantitySelected}</small>
             <div class="agregar-productos">
-                <button class="sumar-producto"> + </button>
-                <button class="restar-producto"> - </button>
+                <button class="sumar-producto" id="btn-sumar"> + </button>
+                <button class="restar-producto" id="btn-restar"> - </button>
             </div>
         </div>
         `
@@ -255,3 +258,6 @@ function mostrarProductosCart(){
     //         </a>
 
     // onclick="location.href='./assets/images/meme2.jpg'"
+
+
+
