@@ -14,47 +14,52 @@
 
 <body>
     <header>
-        <div class="header-container">
+        <nav class="navbar">
+            <div id="logo">
+                <img class="color-logo-academlo" src="./assets/images/logoAcademlo.svg">
+                <h4>STORE</h4>
+            </div>
+            <input type="checkbox" id="menu-hamburguesa">
+            <ul class="nav-list">
+                <li class="red-home">Home</li>
+                <li>Products</li>
+            </ul>
+            <div class="iconos">
+                <i class='bx bx-moon bx-md' id="theme-toggler"></i>
+                <div class="cart">
+                    <img src="./assets/images/shopping-bag.png" alt="">
+                    <span class="cart-count" id="cart-count">0</span>
+                </div>
+            </div>
+            <label for="menu-hamburguesa">
+                <img src="./assets/images/menu-de-puntos.png" id="menu">
+            </label>
+        </nav>
+    </header>
+    <div class=" header-container">
+        <div class="hero-container">
+
+            <div class="hero-info ">
+
+                <div class="hero-info-text">
+                    <h2>New Sweatshirt</h2>
+                    <h2>COLLECTIONS 2022</h2>
+                    <p>
+                        Latest arrival of the new Hanes Midweight Crewneck sweatshirt
+                        <br> from the 2022 series, with a modern design
+                    </p>
+                    <h3>$ 14.00</h3>
+                </div>
+                <div class="button">
+                    <p>Discover</p>
+                    <button type="button">ADD TO CART</button>
+                </div>
+            </div>
             <div class="rectangulo">
                 <img src="./assets/images/home.png">
             </div>
-            <nav class="navbar">
-                <div id="logo">
-                    <img class="color-logo-academlo" src="./assets/images/logoAcademlo.svg">
-                    <h4>STORE</h4>
-                </div>
-                <input type="checkbox" id="menu-hamburguesa">
-                <ul class="nav-list">
-                    <li class="red-home">Home</li>
-                    <li>Products</li>
-                </ul>
-                <div class="iconos">
-                    <i class='bx bx-moon bx-md' id="theme-toggler"></i>
-                    <div class="cart">
-                        <img src="./assets/images/shopping-bag.png" alt="">
-                        <span class="cart-count" id="cart-count">0</span>
-                    </div>
-                </div>
-                <label for="menu-hamburguesa">
-                    <img src="./assets/images/menu-de-puntos.png" id="menu">
-                </label>
-            </nav>
-            <section class="info-header">
-                <h2>New Sweatshirt</h2>
-                <h2>COLLECTIONS 2022</h2>
-                <p>
-                    Latest arrival of the new Hanes Midweight Crewneck sweatshirt 
-                    <br> from the 2022 series, with a modern design
-                </p>
-                <h3>$ 14.00</h3>
-            </section>
-            <section class="button">
-                <p>Discover</p>
-                <button type="button">ADD TO CART</button>
-            </section>
         </div>
-    </header>
-    <main>
+
         <section class="productos">
             <div class="info-productos">
                 <div>
@@ -73,6 +78,9 @@
             <div class="products">
             </div>
         </section>
+    </div>
+    <main>
+        
     </main>
     <footer>
         <div class="footer-container">
@@ -108,13 +116,13 @@
             <div class="cart-list">
                 <div class="empty-state">
                     <img src="./assets/images/empty-cart.png" alt="">
-                    <h5>Aun no has agregado ningun producto a tu carrito</h5>     
+                    <h5>Aun no has agregado ningun producto a tu carrito</h5>
                 </div>
                 <div>
                     <p></p>
                 </div>
                 <div class="cart-item">
-                            <!--
+                    <!--
                          <img src="" alt="">
                     <p></p>
                     <button></button>
@@ -124,7 +132,7 @@
         </div>
     </div>
 
-    
+
     <script src="./assets/js/main.js"></script>
 </body>
 

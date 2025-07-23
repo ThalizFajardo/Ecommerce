@@ -35,6 +35,7 @@ body.dark-theme {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 1px solid red;
 }
 
 
@@ -80,11 +81,9 @@ a{
 /*estilando la barra de navegacion*/
 
 #logo {
-    display: flex;
-    width: 80px;
+     display: flex;
     align-items: center;
-    margin: 0px 0px -25px 0;
-    padding: inherit;
+    margin: auto 0;
 }
 
 .color-logo-academlo{
@@ -173,25 +172,26 @@ a{
 }
 
 nav {
-    display: flex;
+   display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0.5rem 1.25rem;
-    height: 60px;
+    padding: 1rem 2rem;
+    height: 73px;
     color: var(--friendly-gray);
     position: relative;
     z-index: 1;
+    column-count: 3;
 }
 
 .rectangulo {
-    width: 20rem;
-    height: 30rem;
-    background: var(--first-color);
+     height: 30rem;
+    background-color: var(--first-color);
     position: relative;
-    margin: 0px 0 -30rem 34%;
+    /* margin: 0 0 -30rem -11%; */
     z-index: 0;
     max-width: fit-content;
-    left: 20%;
+    left: 14%;
+    top: -72px;
 }
 
 input#menu-hamburguesa {
@@ -213,7 +213,7 @@ input#menu-hamburguesa~ul {
     flex-direction: column;
     align-items: end;
     gap: 2rem;
-    padding: 2rem 1rem;
+    /* padding: 2rem 1rem; */
     display: none;
 }
 
@@ -221,23 +221,32 @@ input#menu-hamburguesa:checked~ul {
     display: flex;
 }
 
+
+/*--HERO SECTION //////////////////////////////////////////*/
+
+.hero-container{
+    column-count: 2;
+
+}
+
 .rectangulo>img {
-    width: 105%;
+    /* width: 105%;
     height: auto;
-    margin: 8rem 0 0 0;
+    margin: 8rem 0 0 0; */
 }
 
-.info-header {
+.hero-info {
     padding: 30rem 2rem 0 2rem;
+    width: max-content
 }
 
-.info-header>p {
+.hero-info>p {
     font-size: 13px;
     text-align: justify;
     color: var(--text-color);
 }
 
-.info-header>h3 {
+.hero-info>h3 {
     padding-top: 1rem;
     color: var(--first-color);
 }
@@ -456,10 +465,10 @@ input#menu-hamburguesa:checked~ul {
 }
 
 @media screen and (min-width: 600px) {
-    .info-header {
+    .hero-info {
         padding: 8rem 28rem 0 4rem;
     }
-    .info-header>p {
+    .hero-info>p {
         margin-top: 1rem;
     }
 }
@@ -474,19 +483,18 @@ input#menu-hamburguesa:checked~ul {
         display: flex;
         flex-direction: row;
         height: auto;
-        margin: 0 -2% -38px 10%;
+        margin: auto auto 4px 99px;
+        font-size: medium;
     }
     .iconos {
         position: relative;
-        margin-top: 3rem;
-        width: 5rem;
-        margin-right: 15%;
+        margin-right: 10%;
         height: 2rem;
         margin-left: 1rem;
     }
-    .rectangulo {
+    /* .rectangulo {
         margin-left: 50%;
-    }
+    } */
 }
 
 @media screen and ( min-width:600px) {
